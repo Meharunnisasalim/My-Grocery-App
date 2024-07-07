@@ -110,7 +110,7 @@ const HomePage = () => {
     <Layout title={"ALl Products - Best offers "}>
       {/* banner image */}
       <img
-        src="/images/bannerimage.jpg"
+        src="https://t3.ftcdn.net/jpg/04/65/46/52/360_F_465465254_1pN9MGrA831idD6zIBL7q8rnZZpUCQTy.jpg"
         className="banner-img"
         alt="bannerimage"
         width={"100%"}
@@ -119,7 +119,7 @@ const HomePage = () => {
       <div className="container-fluid row mt-3 home-page">
         <div className="col-md-3 filters">
           <h4 className="text-center mt-2">Filter By Category</h4>
-          <div className="d-flex flex-column bg-info">
+          <div className="d-flex flex-column bg-warning">
             {categories?.map((c) => (
               <Checkbox
                 key={c._id}
@@ -131,7 +131,7 @@ const HomePage = () => {
           </div>
           {/* price filter */}
           <h4 className="text-center mt-4 ">Filter By Price</h4>
-          <div className="d-flex flex-column bg-info">
+          <div className="d-flex flex-column bg-warning">
             <Radio.Group onChange={(e) => setRadio(e.target.value)}>
               {Prices?.map((p) => (
                 <div key={p._id}>
@@ -150,8 +150,8 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-9 ">
-          <h1 className="text-center  text-black">All Products</h1>
-          <div className="d-flex flex-wrap bg-warning">
+          <h1 className="text-center text-black">All Products</h1>
+          <div className="d-flex flex-wrap bg-gray">
             {products?.map((p) => (
               <div className="card m-2" key={p._id}>
                 <img

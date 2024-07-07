@@ -4,7 +4,7 @@ import Layout from "./../../components/Layout/Layout";
 import AdminMenu from "./../../components/Layout/AdminMenu";
 import toast from "react-hot-toast";
 import axios from "axios";
-import CategoryForm from "../../components/Form/categoryForm.js";
+import CategoryForm from "../../components/Form/categoryForm";
 import { Modal } from "antd";
 
 const CreateCategory = () => {
