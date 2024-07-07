@@ -1,13 +1,10 @@
 {
-  "homepage": "https://Meharunnisasalim/github.io/Fresh-mart-react",
   "name": "grocery-shopping",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://grocery-app-back-end-8.onrender.com",
   "version": "1.0.0",
   "private": "true",
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
