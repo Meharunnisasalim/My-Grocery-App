@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
-import { useData } from "../../context/data";
+// import { useData } from "../../context/data";
 import toast from "react-hot-toast";
 import SearchInput from "../Form/SearchInput";
 import useCategory from "../../hooks/useCategory";
@@ -11,7 +11,7 @@ import { Badge } from "antd";
 const Header = () => {
   const [auth, setAuth] = useAuth();
   const [cart] = useCart();
-  const {data, loading, error}=useData();
+  // const {data, loading, error}=useData();
   const categories = useCategory();
 
   const handleLogout = () => {
@@ -137,14 +137,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      {loading && <p>Loading data...</p>}
-      {error && <p>Error: {error.message}</p>}
-      {data && (
-        <div>
-          <h2>Data from Context</h2>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      )}
     </>
   );
 };
